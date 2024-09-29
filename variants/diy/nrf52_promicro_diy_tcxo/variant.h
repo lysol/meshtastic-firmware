@@ -128,7 +128,7 @@ NRF52 PRO MICRO PIN ASSIGNMENT
 #define SX126X_RXEN (0 + 17)     // P0.17
 #define SX126X_TXEN (32 + 6)  // Assuming that DIO2 is connected to TXEN pin. If not, TXEN must be connected.
 
-// #define SX126X_MAX_POWER 8 set this if using a high-power board!
+#define SX126X_MAX_POWER 8 //set this if using a high-power board!
 
 /*
 On the SX1262, DIO3 sets the voltage for an external TCXO, if one is present. If one is not present, use TCXO_OPTIONAL to try both
