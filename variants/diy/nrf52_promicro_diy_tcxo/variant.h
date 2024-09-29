@@ -108,7 +108,7 @@ NRF52 PRO MICRO PIN ASSIGNMENT
 // Serial interfaces
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO (0 + 2)   // P0.02
+#define PIN_SPI_MISO (32 + 2)   // P0.02
 #define PIN_SPI_MOSI (32 + 15) // P1.15
 #define PIN_SPI_SCK (32 + 11)  // P1.11
 
@@ -120,13 +120,13 @@ NRF52 PRO MICRO PIN ASSIGNMENT
 
 // LORA CONFIG
 #define SX126X_CS (32 + 13)      // P1.13 FIXME - we really should define LORA_CS instead
-#define SX126X_DIO1 (0 + 29)     // P0.10 IRQ
+#define SX126X_DIO1 (0 + 10)     // P0.10 IRQ
 #define SX126X_DIO2_AS_RF_SWITCH // Note for E22 modules: DIO2 is not attached internally to TXEN for automatic TX/RX switching,
                                  // so it needs connecting externally if it is used in this way
-#define SX126X_BUSY (32 + 6)     // P0.29
+#define SX126X_BUSY (0 + 31)     // P0.29
 #define SX126X_RESET (0 + 9)     // P0.09
-#define SX126X_RXEN (0 + 11)     // P0.17
-#define SX126X_TXEN (32 + 4)  // Assuming that DIO2 is connected to TXEN pin. If not, TXEN must be connected.
+#define SX126X_RXEN (0 + 17)     // P0.17
+#define SX126X_TXEN (32 + 6)  // Assuming that DIO2 is connected to TXEN pin. If not, TXEN must be connected.
 
 // #define SX126X_MAX_POWER 8 set this if using a high-power board!
 
